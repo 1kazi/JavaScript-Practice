@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+
+<body>
+    <p id="demo-operators"></p>
+    <script>
+        let i = 0;
+        i++ //i=i+1
+        console.log("value of i is", i);
+        i--; //i=i+1
+        console.log("value of i now after -- is", i)
+        let x = 19;
+        console.log("moduler division by 2", x % 4);
+        let result = x % 4;
+        //% is called moduler  division  it returns the reminder
+        x += 5 //x =x=+5   ;x=19 +5
+        console.log("value of x after x += y", x);
+
+        x -= 7;
+        console.log("value of x after x += y", x);
+
+        //sting addition in operators
+        let txt1 = "azhar"
+        let txt2 = "mohammed"
+        let txt3 = txt1 + "   " + txt2;
+        console.log("my name:::::", txt3);
+
+        let text1 = "what a very    "
+        text1 += "nice day";//txt1 =txt1 +"nice day"
+        console.log(text1);
+
+        // BODMAS RULE====BRACKET  OF DIVISION MULTIPLICATION ADDITION SUBSTRACTION 
+
+        let z = (100 + 5) * 50;
+        console.log("z value :::", z);
+
+
+        // COMPARISION OPERATARS RETURNS ONLY TRUE OR FALSE 
+        let p = 3;
+        console.log("VALUE of p::", p);
+        let q = 3;
+        console.log("Value of q::", q);
+        let r = (p === q)
+        console.log("value of r", r);
+        console.log("greater than operator q>p :::", (q >= p));
+        console.log("less than operator q<p:::: ", (q <= p));
+        console.log("value of r", r);
+
+        // BITWISE OPERATORS    &= AND     |=OR 
+        let a = 1;//0001
+        let b = 12;//1100
+        let c = a & b;
+        console.log("value of c", c);
+        //bitwise operators checks only last 1bit of number
+        let d = 3; //001
+        let e = 13; //1101
+        let f = a | b;
+        console.log("value of f is", f);
+
+        // logical operators &&=AND     ||=OR
+        let g = 1;
+        let h = 0;
+        let j = a || b;
+        console.log("value of j is", j);
+
+        //  ?? Coalese  /Nullish Operators
+        // THe ?? operayor returns the first argument if it is null or undefined.
+        //  otherwise it returns the second.
+        let name = null;
+        let text = "missing";
+        let output = name ?? text;
+        console.log("the output is", output);
+
+
+
+        let numb = 5;
+// to convert a number into string we use .tostring()
+        let text5 = numb.toString();
+        // padStart method adds the string in the start of the text/string 
+        let padded = text5.padStart(4, "0");
+        console.log("AFTER PADDING START::    ", padded);
+
+
+        let text6 = "HELLO";
+        // ["H","E","L","L","O"]
+        
+        let char1 = text6.charCodeAt(4);
+        console.log("character at index position 4 is   ",char1);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+    <script>
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+        function btnConvertToCelsius() {
+            let temElement = document.getElementById("temId")
+            document.getElementById("demo").innerHTML = toCelsius(temElement.value);
+            document.getElementById("demo").style.backgroundColor = "red";
+            document.getElementById("demo").style.border = "green solid 10px";
+
+        }
+
+        // FUNCTION DECLARATION OR DEFINATION 
+        function myFunction(a, b) {
+            return a * b / 2;
+        }
+        // INVOKE  / CALL A FUNCTION 
+        let y = myFunction(4, 6)
+        console.log("Myfunction::     ", y);
+        console.log("Myfunction::     ", myFunction(7, 2));
+
+       
+        
+        localVariableFunction()
+// code here can not use carName variable
+// console.log (CAR  Name)
+           function localVariableFunction(){
+            let car = {
+                name: "BMW",
+                model: 800,
+                weight: 160,
+                color: "blue"
+            };
+            console.log("CAR OBJECT::   ",car,  "CAR NAME",car.name);
+            console.log("CAR NAME     ",car.name);
+            console.log("CAR WEIGHT     ",car.weight)
+            console.log("CAR COLOR     ",car.color)
+           }
+     </script>
+</head>
+
+<body>
+    <input id="temId" type="number" placeholder="enter your temperature in fahreheit">
+    <button onclick="btnConvertToCelsius()">convert to degree celecius</button>
+    <p id="demo"></p>
+</body>
+
+</html>

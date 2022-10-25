@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+ <!-- function example2  internal javascript  -->
+
+    <script> 
+    function myFunction() 
+    { 
+        document.getElementById("demo2").innerHTML = "dynamic paragraph created by javascript on click event";
+        document.getElementById("demo2").style.background = "red";
+        document.getElementById("demo2").style.fontSize = "100px"; 
+        document.getElementById("demo2").style.border= "10px solid yellow"; 
+        document.getElementById("demo2").style.color= "green"; 
+        };</script>
+
+
+</head>
+
+<body>
+    <!-- start example1 inline java script  -->
+    <h2>Javascript in Body</h2>
+    <p id="demo"></p>
+    <script>document.getElementById("demo").innerHTML = "dynamic paragraph created by javascript"</script>
+    <!-- end example1  -->
+
+
+ <!-- function example2  internal javascript  -->
+    <h2>Javascript in Head</h2>
+    <p id="demo2"></p>
+    <button onclick="myFunction()">click me to get the paragraph</button>
+</body>
+
+</html>

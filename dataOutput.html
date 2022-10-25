@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different data Display</title>
+
+</head>
+
+<body>
+
+    <h2>HI this is heading</h2>
+    <p id="data-demo"></p>
+    <button onclick='myFunction()'>click me</button>
+    <button onclick='myFunction2()'>click me2</button>
+    <!-- <script>
+        document.getElementById("data-demo").innerHTML=4+5;
+        document.write(4+5+1000)
+    </script> -->
+
+    <script>
+        function myFunction() {
+            var a, b, c;
+            a = 5;
+            b = 6;
+            console.log("value of b is ::",b)
+            console.log(" value of a is",a)
+            c = add(a, b);
+            console.log("the sum first is", c,b,a);
+            document.getElementById("data-demo").innerHTML = "first number is" + a + "</br> second number is" + b + '</br> sum is ' + c;
+        }
+        function add(a, b) {
+            return a + b;
+        }
+        function myFunction2() {
+            var x, y, z;
+            x = 89;
+            y = 90;
+            z = add(x, y);
+            console.log("the sum is", z, x, y)
+
+        }
+    </script>
+</body>
+
+</html>

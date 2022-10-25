@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to fixed method</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let x = 9.656;
+        document.getElementById("demo").innerHTML =
+            x.toFixed(0) + "<br>" +  //10
+            x.toFixed(2) + "<br>" + //9.66
+            x.toFixed(4) + "<br>" + //9.6560
+            x.toFixed(6);        //9.656000
+    </script>
+</body>
+
+</html>

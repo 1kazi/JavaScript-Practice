@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPE OF STRING </title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // x is a string        
+        let x = "AZHAR MOHAMMED";
+        let str = "APPLE ,BANANA, KIWI"
+        console.log(str.length);
+        let strB = str.slice(7, 14);
+        console.log(strB);
+        // y is an object 
+        let y = new String("john");
+        let n = (x === y);
+        console.log("VALUE OF N IS    ", n);
+
+
+        let z = 345
+        // typeof is the javascript reserved keyword used to determine the type of variable. 
+        // typeof returns the type of variable 
+
+        let q = null;
+        let r = undefined;
+        document.getElementById("demo").innerHTML = typeof x + "<br/>"
+            + typeof y + "<br/> "
+            + typeof z + "<br/>"
+            + typeof q + "<br/>"
+            + typeof r + "<br/>"
+            + typeof n;   
+    </script>
+
+</body>
+
+</html>

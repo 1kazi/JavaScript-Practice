@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search method</title>
+    <script>
+        function searchText() {
+            let searchInputValue = document.getElementById("searchId").value.toLowerCase();
+            let ptagStringValue = document.getElementById("searchTxt").innerText.toLowerCase();
+            document.getElementById("resultId").innerHTML =
+                ptagStringValue.indexOf(searchInputValue) === -1
+                    ? "search text    " + searchInputValue + "      not found"
+                    : searchInputValue + "    found at position   "
+                    + ptagStringValue.indexOf(searchInputValue)
+        }
+    </script>
+</head>
+
+
+<body>
+    <input type="text" placeholder="enter the string to search" id="searchId">
+    <button onclick="searchText()"> search </button>
+    <p id="resultId"></p>
+    <p id="searchTxt">JavaScript , often abbreviated as JS, is a programming language that is one of the core
+        technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the
+        client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a
+        dedicated JavaScript engine to execute the code on users' devices.</p>
+</body>
+
+</html>

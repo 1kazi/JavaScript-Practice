@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script events</title>
+    
+    <script>
+        // this.displayobject() 
+        function onTexBoxValueChange() {
+            console.log("On change event called  ");
+            document.getElementById("objId").innerHTML =
+             document.getElementById("name").value 
+            
+        }
+        
+            function onTexBoxKeyPressed() {
+                console.log("key pressed event called  ");
+                document.getElementById("objId").innerHTML = 
+                document.getElementById("name").value
+
+            }
+        
+    </script>
+    
+</head>
+<body>
+    <p id="objId"></p>
+    <input type="text" id="name"
+    onkeypress="onTexBoxKeyPressed()" onchange="onTexBoxValueChange()"
+    placeholder="enter your name">
+</body>
+</html>

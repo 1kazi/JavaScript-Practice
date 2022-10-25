@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects in html</title>
+    <script>
+        function displayObject() {
+            const person = {
+                firstName: "AZHAR",
+                "last Name": "SHAIKH",
+                age: 32,
+                fullName: function () {
+                    return this.firstName + "    " + this["last Name"]
+                    // this. display object()
+                }
+            }
+            document.getElementById("objId").innerHTML =
+                "FIRST NAME:  " + person.firstName
+                + "     LAST NAME:   " + person["last Name"] +
+                "      AGE:  " + person.age +"FULL NAME:   " +person.fullName()
+        }
+    </script>
+</head>
+
+<body>
+    <p id="objId"></p>
+    <button onclick="displayObject()">Show Object</button>
+</body>
+
+</html>

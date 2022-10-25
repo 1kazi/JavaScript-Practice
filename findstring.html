@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index of example</title>
+</head>
+<script>
+    function getSearchStringPosition() {
+        let pElementData = document.getElementById("pId").innerHTML;
+        let inputTxtValue = document.getElementById("inputId").value;
+        document.getElementById("demo").innerHTML = pElementData.indexOf(inputTxtValue);
+    }
+</script>
+<body>
+    <input type="text" id="inputId" placeholder="ENTER TEXT TO SEARCH"/>
+    <button onclick="getSearchStringPosition()">CLICK   ME</button>
+    <p id="demo"></p>
+    <p id="pId">please locate where 'locate'  occurs!</p>
+</body>
+</html>

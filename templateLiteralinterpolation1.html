@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+<input type="text" id="fName" placeholder="Enter First Name">
+<input type="text" id="lName" placeholder="Enter last Name">
+<button onclick="logIn()"> LOGIN</button>
+<p id="demo"></p>
+
+<script>
+    function logIn(){
+        let firstNameValue = document.getElementById("fName").value;
+        let lastNameValue = document.getElementById("lName").value;
+        document.getElementById("demo").innerHTML = `Welcome ${firstNameValue}, ${lastNameValue}!`
+    }
+</script>
+<body>
+    
+</body>
+</html>

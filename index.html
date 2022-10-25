@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Examples</title>
+</head>
+
+<body>
+    <div>
+        Hi
+    </div>
+    <div id="example"></div>
+    <!-- using querySelector   by showing # in circle bracket  -->
+    <button style="border: 1px solid red;" onclick='document.querySelector("#example").innerHTML="From Javascript ID"'>
+        Click Me
+    </button>
+    <div>
+        Hi
+    </div>
+
+    <div id="example1"></div>
+    <!-- using getElementById not showing anthing in circle bracket  -->
+    <button onclick='document.getElementById("example1").innerHTML="From Javascript ID"'>
+        Click Me
+    </button><br>
+
+    <!-- bulb on off event -->
+    <button onclick='document.getElementById("bulbing").src="pic_bulbon.gif"'>ON </button>
+    <img id="bulbing" src="pic_bulboff.gif">
+    <button onclick='document.getElementById("bulbing").src="pic_bulboff.gif"'>OFF </button><br>
+
+
+ <!-- show bulb or remove bulb  -->
+ <button onclick='document.querySelector("#bulbing1").style.display="none"'>REMOVE BULB </button>
+ <img id="bulbing1" src="pic_bulboff.gif">
+
+ <button onclick='document.querySelector("#bulbing1").style.display="inline"'>SHOW BULB </button>
+
+
+
+    <!-- background colour chaanges via javascript  -->
+    <p id="p-font">
+        Hi changing font size via javascript
+    </p>
+    <button onclick='document.querySelector("#p-font").style.backgroundColor="red";document.querySelector("#p-font").style.fontSize="75px"'>Change font</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>substring</title>
+    <script>
+        function sliceTextBoxValue() {
+            let txt1Value = document.getElementById("txt1").value
+            document.getElementById("display1").innerHTML =
+                // end logic for substring. Note  -substring will treat less than 0 values as 0
+                txt1Value.length > 3 ? txt1Value.substring(txt1Value.length - 3) : "enter more than 3 charecter"
+
+
+
+            // substr( ) similar to slice --
+            // difference is second parameter/argument is the length of the extracted post 
+
+        }
+        function sliceTextBoxValue1() {
+            let txt1Value = document.getElementById("txt2").value
+
+            document.getElementById("display2").innerHTML =
+                txt1Value.length > 3 ? txt1Value.substr(2, 3) : "enter more than 3 charecter"
+
+                       }
+        // str.replace ("what to replace " ,"new string to replace with") 
+        // first parameter is serchValue and is second is replace value 
+        let text = "please visit microsoft";
+        let newtext = text.replace("microsoft", "AZHAR ACADEMY");
+        console.log("AFTER REPLACE ::   ", newtext);
+
+
+        let text1 = "Please visit Microsoft and Microsoft!";
+        let newtext1 = text1.replace(/Microsoft/g, "W3Schools");
+        console.log("AFTER REPLACE ::   ", newtext1);
+
+        let text5 = "Hello";
+        let text2 = "World";
+        let text3 = text5.concat(" ", text2 , "   " , "from azhar academy ");
+        console.log(text3);
+
+
+         </script>
+</head>
+
+<body>
+    <input type="text" id="txt1" placeholder="enter name">
+    <button onclick="sliceTextBoxValue()">slice</button>
+    <p id="display1"></p>
+
+    <input type="text" id="txt2" placeholder="enter name">
+    <button onclick="sliceTextBoxValue1()">button</button>
+    <p id="display2"></p>
+
+</body>
+
+</html>

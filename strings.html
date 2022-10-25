@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getNameLength() {
+            const nameValue = document.getElementById('nameId').value;
+            document.getElementById('lengthId').innerHTML = "THE LENGTH OF STRING IS ::   "
+            + nameValue.length;
+        }
+    </script>
+</head>
+<body>
+    <p ></p>
+   <input id="nameId" type="text" type="text" placeholder="enter your name">
+    <button onclick="getNameLength()">GET THE NAME LENGTH</button>
+    <p id="lengthId"></p>
+</body>
+</html>
